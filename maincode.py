@@ -61,7 +61,7 @@ def Check_Board(board):
 def Player_Choice(board):
     pos = 0
 
-    while pos not in range(9) or not Check_Space(board, pos):
+    while pos not in range(1,10) or not Check_Space(board, pos):
         pos = int(input('Next position: (1-9):'))
 
     return pos
